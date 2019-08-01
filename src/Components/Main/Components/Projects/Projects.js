@@ -1,17 +1,24 @@
 import React from 'react';
 
 // CHILD COMPONENTS
-import Gallery from './Components/Gallery/Gallery';
+import Gallery from '../../../Gallery/Gallery';
 
 // MEDIA IMPORTS
-import {HorizonFLMMedia, JobberMedia} from './Components/Gallery/PhotoManager';
+import {HorizonFLMMedia, JobberMedia} from '../../../Gallery/MediaManager';
+
+// STYLED COMPONENTS
+import {
+    Container,
+    SectionHeader,
+
+  } from './ProjectsStyles';
 
 const Projects = () => {
     return (
-        <div>
-            <div>
-                <h1>Projects Component</h1>
-            </div>
+        <Container>
+            <SectionHeader>
+                <h1>My Projects</h1>
+            </SectionHeader>
             <div>
                 <div>
                     <h1>Horizon Flight Management</h1>
@@ -32,7 +39,7 @@ const Projects = () => {
                     <Gallery media={JobberMedia} />
                 </div>
             </div>
-        </div>
+        </Container>
     )
 }
 export default Projects;

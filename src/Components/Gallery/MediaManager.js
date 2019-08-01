@@ -1,3 +1,5 @@
+export const Headshot = '/assets/profilePic.png'
+
 export const HorizonFLMMedia = [
   {
     src: '/assets/tremorPic.jpg',
