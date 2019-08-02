@@ -19,7 +19,6 @@ const Gallery = (props) => {
         showThumbs={false}
         showStatus={false}
         infiniteLoop={true}
-        useKeyboardArrows={true}
         autoPlay={true}
         interval={4000}
         emulateTouch={true}

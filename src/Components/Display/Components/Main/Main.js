@@ -1,18 +1,23 @@
 import React from "react";
 
-// Component Imports
+// CHILD COMPONENTS
 import Introduction from "./Components/Introduction/Introduction";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 
-// Main Component
+// STYLED COMPONENTS
+import {
+  Container
+} from './MainStyles';
+
+// MAIN COMPONENT
 const Main = () => {
   return (
-    <div>
+    <Container>
       <Introduction />
       <Projects />
       <Contact />
-    </div>
+    </Container>
   );
 };
 export default Main;

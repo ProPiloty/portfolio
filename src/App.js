@@ -2,14 +2,12 @@ import React from "react";
 import "./App.css";
 
 // Components
-import Hero from "./Components/Hero/Hero";
-import Main from "./Components/Main/Main";
+import Display from "./Components/Display/Display";
 
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <Main />
+      <Display />
     </div>
   );
 }
