@@ -6,9 +6,7 @@ import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 
 // STYLED COMPONENTS
-import {
-  Container
-} from './MainStyles';
+import { Container } from "./MainStyles";
 
 // MAIN COMPONENT
 const Main = () => {
