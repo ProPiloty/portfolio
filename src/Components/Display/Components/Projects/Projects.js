@@ -12,7 +12,7 @@ import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import {
   HorizonFLMMedia,
   JobberMedia
-} from "./Components/Gallery/MediaManager";
+} from "../../../../utils/MediaManager";
 
 // STYLED COMPONENTS
 import {

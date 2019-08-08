@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import device from './../../../Devices';
+import { device } from "./../../../../utils/Devices";
 
 export const CompName = styled.div `
     background: black;

@@ -2,11 +2,14 @@ import React from "react";
 
 // CHILD COMPONENTS
 import Hero from "./Components/Hero/Hero";
-import Main from "./Components/Main/Main";
+// import Introduction from "./Components/Introduction/Introduction";
+import Projects from "./Components/Projects/Projects";
+import Contact from "./Components/Contact/Contact";
 
 // STYLED COMPONENTS
 import {
-  Container
+  Container,
+  Main
 } from './DisplayStyles';
 
 // DISPLAY COMPONENT
@@ -14,7 +17,11 @@ const Display = () => {
   return (
     <Container>
       <Hero />
-      <Main />
+      <Main>
+        {/* <Introduction /> */}
+        <Projects />
+        <Contact />
+      </Main>
     </Container>
   );
 };

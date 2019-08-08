@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from './../Devices';
+import { device } from './../../utils/Devices';
 
 export const Container = styled.div `
   display: flex;
@@ -11,3 +11,10 @@ export const Container = styled.div `
   }
 `
 
+export const Main = styled.div`
+  @media (${device.laptop}) {
+    width: 70vw;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+`;

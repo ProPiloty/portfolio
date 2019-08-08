@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-// Components
+// COMPONENTS
 import Display from "./Components/Display/Display";
 
 function App() {

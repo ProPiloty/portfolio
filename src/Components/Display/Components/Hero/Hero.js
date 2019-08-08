@@ -1,5 +1,7 @@
 import React from 'react';
-import {Headshot} from './../Main/Components/Projects/Components/Gallery/MediaManager';
+
+// MEDIA IMPORTS
+import {Headshot} from './../../../../utils/MediaManager';
 
 // STYLED COMPONENTS
 import {
