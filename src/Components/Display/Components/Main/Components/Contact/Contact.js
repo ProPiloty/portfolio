@@ -19,19 +19,20 @@ import {
 // STYLED COMPONENTS
 import {
   Container,
+  ContactForm,
   Legal
 } from './ContactStyles';
 
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact Component</h1>
-      <form>
+    <Container>
+      <h1>Contact Me</h1>
+      <ContactForm>
         <input placeholder="Name" />
         <input placeholder="Email" />
         <input placeholder="Message" />
         <button>Submit</button>
-      </form>
+      </ContactForm>
       <div>
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tylerellingford/" >
           <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
@@ -46,7 +47,7 @@ const Contact = () => {
       <Legal>
         <h6>© Tyler Ellingford | 2019</h6>
       </Legal>
-    </div>
+    </Container>
   );
 };
 export default Contact;

@@ -20,6 +20,12 @@ import {
   SectionHeader,
   ProjectsList,
   Project,
+  ProjectTitle,
+  ProjectLinks,
+  ProjectLink,
+  AboutProject,
+  AboutDescription,
+  AboutList,
   GalleryStyles
 } from "./ProjectsStyles";
 
@@ -27,29 +33,46 @@ const Projects = () => {
   return (
     <Container>
       <SectionHeader>
-        <h1>Check out some of my past work!</h1>
+        <h1>My Past Projects</h1>
       </SectionHeader>
       <ProjectsList>
         <Project>
-          <h1>Horizon Flight Management</h1>
-          <h3>
+          <ProjectTitle>Horizon Flight Management</ProjectTitle>
+          <ProjectLinks>
+            <ProjectLink target="_blank" rel="noopener noreferrer" href="https://www.youtube.com" >
+              <FontAwesomeIcon icon={faLaptopCode} /> Live Project
+            </ProjectLink>
+            <ProjectLink target="_blank" rel="noopener noreferrer" href="https://www.youtube.com" >
+              <FontAwesomeIcon icon={faGithubSquare} /> GitHub Repo
+            </ProjectLink>
+          </ProjectLinks>
+          <AboutDescription>
             A personal project to create a synonymous experience for fixed base
             operators, flight crews, ground crews, and passengers.
-          </h3>
+          </AboutDescription>
+          <AboutList>
+            {/* <li>Technologies Used</li> */}
+            <li>React</li>
+            <li>Node</li>
+            <li>PostgreSql</li>
+            <li>React</li>
+            <li>Node</li>
+            <li>PostgreSql</li>
+          </AboutList>
           <GalleryStyles>
             <Gallery media={HorizonFLMMedia} />
           </GalleryStyles>
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com" >
-              <FontAwesomeIcon icon={faLaptopCode} /> Visit project
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com" >
-              <FontAwesomeIcon icon={faGithubSquare} /> Visit repo
-            </a>
-          </div>
         </Project>
         <Project>
-          <h1>Jobber</h1>
+          <ProjectTitle>Jobber</ProjectTitle>
+          <ProjectLinks>
+            <ProjectLink target="_blank" rel="noopener noreferrer" href="https://www.youtube.com" >
+              <FontAwesomeIcon icon={faLaptopCode} /> Live Project
+            </ProjectLink>
+            <ProjectLink target="_blank" rel="noopener noreferrer" href="https://www.youtube.com" >
+              <FontAwesomeIcon icon={faGithubSquare} /> GitHub Repo
+            </ProjectLink>
+          </ProjectLinks>
           <h3>
             A platform that allows businesses to create and track bids, manage a
             basic schedule, and their customer's information.
@@ -57,14 +80,6 @@ const Projects = () => {
           <GalleryStyles>
             <Gallery media={JobberMedia} />
           </GalleryStyles>
-          <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com" >
-              <FontAwesomeIcon icon={faLaptopCode} /> Visit project
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com" >
-              <FontAwesomeIcon icon={faGithubSquare} /> Visit repo
-            </a>
-          </div>
         </Project>
       </ProjectsList>
     </Container>

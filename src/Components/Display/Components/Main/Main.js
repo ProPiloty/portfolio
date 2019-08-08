@@ -1,7 +1,7 @@
 import React from "react";
 
 // CHILD COMPONENTS
-import Introduction from "./Components/Introduction/Introduction";
+// import Introduction from "./Components/Introduction/Introduction";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 
@@ -12,7 +12,7 @@ import { Container } from "./MainStyles";
 const Main = () => {
   return (
     <Container>
-      <Introduction />
+      {/* <Introduction /> */}
       <Projects />
       <Contact />
     </Container>
