@@ -3,16 +3,16 @@ import { device } from "./../../../../utils/Devices";
 
 export const Container = styled.header `
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  // height: 400px;
   width: 100%;
-  background: gray;
+  background: #0A0908;
+  color: #FCFFFC;
 
   @media(${device.laptop}) {
     width: 30vw;
     height: 100vh;
-    // background: gray;
   }
 `
 
@@ -23,8 +23,18 @@ export const HeadShot = styled.img `
   border-radius: 50%;
 `
 
-export const Summary = styled.div `
+export const SummaryContainer = styled.div `
   margin: 30px 60px;
+`
+
+export const Intro = styled.h3 `
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+`
+
+export const Summary = styled.h4 `
+  font-family: 'Cabin', sans-serif;
+  margin: 15px 30px;
 `
 
 export const SocialLinks = styled.div `
@@ -34,7 +44,7 @@ export const SocialLinks = styled.div `
 
 export const SocialLink = styled.a `
   margin: 15px;
-  color: black;
+  color: #FCFFFC;
 
   &:hover {
     color: red;

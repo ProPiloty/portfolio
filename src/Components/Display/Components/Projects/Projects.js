@@ -26,6 +26,7 @@ import {
   AboutProject,
   AboutDescription,
   AboutList,
+  TechItem,
   GalleryStyles
 } from "./ProjectsStyles";
 
@@ -52,12 +53,12 @@ const Projects = () => {
           </AboutDescription>
           <AboutList>
             {/* <li>Technologies Used</li> */}
-            <li>React</li>
-            <li>Node</li>
-            <li>PostgreSql</li>
-            <li>React</li>
-            <li>Node</li>
-            <li>PostgreSql</li>
+            <TechItem>React</TechItem>
+            <TechItem>Node</TechItem>
+            <TechItem>PostgreSql</TechItem>
+            <TechItem>React</TechItem>
+            <TechItem>Node</TechItem>
+            <TechItem>PostgreSql</TechItem>
           </AboutList>
           <GalleryStyles>
             <Gallery media={HorizonFLMMedia} />

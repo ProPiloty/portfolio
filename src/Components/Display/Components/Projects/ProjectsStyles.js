@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #C6DEA6;
 `;
 
 export const SectionHeader = styled.div`
@@ -15,6 +16,7 @@ export const ProjectsList = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #FCFFFC;
 `;
 
 export const Project = styled.div`
@@ -23,7 +25,7 @@ export const Project = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: aquamarine;
+  background: #424B54;
 `;
 
 export const ProjectTitle = styled.h1`
@@ -39,7 +41,7 @@ export const ProjectLinks = styled.div`
 `;
 
 export const ProjectLink = styled.a`
-  background: white;
+  background: #FCFFFC;
   text-decoration: none;
   width: 125px;
   padding: 10px;
@@ -47,10 +49,10 @@ export const ProjectLink = styled.a`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: black;
+  color: #0A0908;
 
   &:hover {
-    background: green;
+    background: #C6DEA6;
   }
 `;
 
@@ -68,8 +70,13 @@ export const AboutDescription = styled.h3`
 export const AboutList = styled.ul`
   background: red;
   display: flex;
+  margin: 0px 15px;
   // flex-direction: column;
   justify-content: space-between;
+`;
+
+export const TechItem = styled.li`
+  margin: 0px 10px;
 `;
 
 export const GalleryStyles = styled.div`

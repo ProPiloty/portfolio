@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { device } from "./../../../../utils/Devices";
 
 export const Container = styled.div`
-  background: gray;
+  background: #7EBDC3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media (max-width: ${device.laptop}) {
   }
 `;
