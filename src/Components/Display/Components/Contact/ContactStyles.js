@@ -11,6 +11,7 @@ export const Container = styled.div`
 `;
 
 export const ContactForm = styled.form `
+  margin: 30px 30px 0px;
   display: flex;
   flex-direction: column;
 `

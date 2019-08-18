@@ -1,60 +1,76 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { device } from "./../../../../utils/Devices";
 
-export const Container = styled.header `
+// PARENT CONTAINER FOR HERO COMPONENT
+export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  background: #0A0908;
-  color: #FCFFFC;
+  background: #424b54;
+  color: #fcfffc;
 
-  @media(${device.laptop}) {
+  @media (${device.laptop}) {
+    position: sticky;
     width: 30vw;
     height: 100vh;
   }
-`
+`;
 
-export const HeadShot = styled.img `
-  margin-top: 30px;
+// CONTENT CONTAINER FOR HERO
+export const Separator = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+// HEADSHOT PHOTO
+export const HeadShot = styled.img`
+  margin: 30px 30px 0px;
   height: 150px;
   width: 150px;
   border-radius: 50%;
-`
+`;
 
-export const SummaryContainer = styled.div `
-  margin: 30px 60px;
-`
-
-export const Intro = styled.h3 `
-  font-family: 'Roboto Condensed', sans-serif;
+// PERSONAL INTRODUCTION
+export const Intro = styled.h3`
+  margin: 30px 30px 0px;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
-`
-
-export const Summary = styled.h4 `
-  font-family: 'Cabin', sans-serif;
-  margin: 15px 30px;
-`
-
-export const SocialLinks = styled.div `
-  margin-bottom: 30px;
   font-size: 2rem;
-`
+  text-align: center;
+`;
 
-export const SocialLink = styled.a `
-  margin: 15px;
-  color: #FCFFFC;
+// ABOUT ME
+export const Summary = styled.h4`
+  margin: 30px 30px 0px;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.2rem;
+  text-indent: 1rem;
+`;
+
+// PARENT COMPONENT FOR SOCIAL LINKS
+export const SocialContainer = styled.div`
+  margin: 30px 30px 30px;
+  font-size: 2rem;
+`;
+
+// INDIVIDUAL SOCIAL LINK
+export const SocialLink = styled.a`
+  margin: 0px 15px;
+  color: #fcfffc;
 
   &:hover {
     color: red;
   }
-`
+`;
 
-export const Legal = styled.div `
+// COPYWRITE INFORMATION
+export const Legal = styled.div`
+  margin: 0px 30px 15px;
   display: none;
 
-  @media(${device.laptop}) {
+  @media (${device.laptop}) {
     display: initial;
   }
-`
+`;

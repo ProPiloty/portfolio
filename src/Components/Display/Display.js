@@ -2,7 +2,7 @@ import React from "react";
 
 // CHILD COMPONENTS
 import Hero from "./Components/Hero/Hero";
-// import Introduction from "./Components/Introduction/Introduction";
+import Introduction from "./Components/Introduction/Introduction";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 
@@ -18,7 +18,7 @@ const Display = () => {
     <Container>
       <Hero />
       <Main>
-        {/* <Introduction /> */}
+        <Introduction />
         <Projects />
         <Contact />
       </Main>
