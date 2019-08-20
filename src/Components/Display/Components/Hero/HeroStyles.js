@@ -11,7 +11,6 @@ export const Container = styled.header`
   color: #fcfffc;
 
   @media (${device.laptop}) {
-    position: sticky;
     width: 30vw;
     height: 100vh;
   }
@@ -26,7 +25,7 @@ export const Separator = styled.div`
 
 // HEADSHOT PHOTO
 export const HeadShot = styled.img`
-  margin: 30px 30px 0px;
+  margin: 30px 0px 0px;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -61,7 +60,7 @@ export const SocialLink = styled.a`
   color: #fcfffc;
 
   &:hover {
-    color: red;
+    color: #7ebdc3;
   }
 `;
 
