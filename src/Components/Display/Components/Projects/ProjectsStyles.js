@@ -61,7 +61,6 @@ export const ProjectLinks = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  border: 1px dotted red;
 `;
 
 // LINKS TO LIVE PROJECT AND GITHUB REPO

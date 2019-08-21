@@ -81,11 +81,17 @@ export const Submit = styled.button`
     background: #424b54;
     border-color: #0a0908;
   }
+
+  &:disabled {
+    background: red;
+  }
 `;
 
 export const SocialContainer = styled.div`
-  margin: 30px 30px 30px;
+  margin: 15px 0px 0px;
   font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const SocialLink = styled.a`
@@ -93,7 +99,7 @@ export const SocialLink = styled.a`
   color: #fcfffc;
 
   &:hover {
-    color: #7ebdc3;
+    color: #424b54;
   }
 `
 
