@@ -75,10 +75,11 @@ export const ProjectLink = styled.a`
   border-radius: 5px;
   border: 1px solid #424b54;
 
-  &:hover {
+  &:hover, &:focus {
     color: #fcfffc;
     background: #424b54;
     border-color: #0a0908;
+    outline: none;
   }
 `;
 

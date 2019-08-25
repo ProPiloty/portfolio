@@ -2,19 +2,24 @@ import React from 'react';
 
 // STYLED COMPONENTS
 import {
-    Container
+    Container,
+    SectionHeader,
+    SkillsList,
+    Skill
   } from './IntroductionStyles';
 
 const Introduction = () => {
     return (
         <Container>
-            <h1>Introduction Component</h1>
-            <ul>
-                <li>SKILLS</li>
-                <li>React</li>
-                <li>Node</li>
-                <li>PostgreSQL</li>
-            </ul>
+            <SectionHeader>My Skills</SectionHeader>
+            <SkillsList>
+                <Skill>ReactJS</Skill>
+                <Skill>NodeJS</Skill>
+                <Skill>PostgreSQL</Skill>
+                <Skill>HTML5</Skill>
+                <Skill>CSS3</Skill>
+                <Skill>Javascript</Skill>
+            </SkillsList>
         </Container>
     )
 }

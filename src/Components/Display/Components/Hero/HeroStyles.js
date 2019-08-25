@@ -9,6 +9,7 @@ export const Container = styled.header`
   align-items: center;
   background: #424b54;
   color: #fcfffc;
+  border-bottom: 1px solid #0a0908;
 
   @media (${device.laptop}) {
     width: 30vw;
@@ -59,8 +60,9 @@ export const SocialLink = styled.a`
   margin: 0px 15px;
   color: #fcfffc;
 
-  &:hover {
+  &:hover, &:focus {
     color: #7ebdc3;
+    outline: none;
   }
 `;
 

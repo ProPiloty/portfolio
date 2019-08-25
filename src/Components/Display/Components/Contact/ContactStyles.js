@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media (max-width: ${device.laptop}) {
   }
 `;
@@ -29,6 +30,10 @@ export const InputTag = styled.h3`
   margin: 15px 0px 0px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
+
+  @media(${device.laptop}) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const Input = styled.input`
@@ -37,13 +42,16 @@ export const Input = styled.input`
   border: 1px solid #424b54;
   font-size: 0.75rem;
   font-family: "Cabin", sans-serif;
-  text-align: center;
   padding: 10px;
 
   &:focus {
     border-color: #0a0908;
     outline: none;
     font-weight: 700;
+  }
+
+  @media(${device.laptop}) {
+    font-size: 1rem;
   }
 `;
 
@@ -52,6 +60,7 @@ export const Message = styled.textarea`
   border-radius: 5px;
   border: none;
   font-size: 0.75rem;
+  font-family: "Cabin", sans-serif;
   padding: 10px;
   border: 1px solid #424b54;
   resize: vertical;
@@ -60,6 +69,10 @@ export const Message = styled.textarea`
     border-color: #0a0908;
     outline: none;
     font-weight: 700;
+  }
+
+  @media(${device.laptop}) {
+    font-size: 1rem;
   }
 `;
 
@@ -74,36 +87,45 @@ export const Submit = styled.button`
   color: #0a0908;
   border-radius: 5px;
   border: 1px solid #424b54;
-  font-size: 1rem;
+  font-size: .75rem;
 
-  &:hover {
+  &:hover, &:focus {
+    font-weight: 700;
     color: #fcfffc;
     background: #424b54;
     border-color: #0a0908;
+    outline: none;
   }
 
-  &:disabled {
-    background: red;
+  @media(${device.laptop}) {
+    font-size: 1rem;
+    margin: 30px 0px 0px;
   }
 `;
 
 export const SocialContainer = styled.div`
-  margin: 15px 0px 0px;
+  margin: 30px 0px 15px;
   font-size: 2rem;
   display: flex;
   justify-content: space-between;
+
+  @media(${device.laptop}) {
+    margin: 30px 0px 30px;
+    font-size: 2.75rem;
+  }
 `;
 
 export const SocialLink = styled.a`
   margin: 0px 15px;
-  color: #fcfffc;
+  color: #0a0908;
 
-  &:hover {
-    color: #424b54;
+  &:hover, &:focus {
+    color: #fcfffc;
+    outline: none;
   }
 `
 
-export const Legal = styled.div`
+export const Legal = styled.h6`
   margin: 15px 30px 15px;
 
   @media (${device.laptop}) {

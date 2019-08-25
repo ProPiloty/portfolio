@@ -18,7 +18,14 @@ import {
 
 // FONT AWESOME ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelopeSquare,
+  faPhoneSquare
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faLinkedin,
+  faGithubSquare
+} from "@fortawesome/free-brands-svg-icons";
 
 // HERO COMPONENT
 const Hero = () => {
@@ -60,14 +67,14 @@ const Hero = () => {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/tylerellingford/"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faEnvelopeSquare} />
           </SocialLink>
           <SocialLink
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/tylerellingford/"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faPhoneSquare} />
           </SocialLink>
         </SocialContainer>
       </Separator>

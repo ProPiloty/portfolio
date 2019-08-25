@@ -3,18 +3,13 @@ import axios from "axios";
 
 // FONT-AWESOME ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//     faBolt,
-//     faTint,
-//     faToilet,
-//     faCalendarAlt,
-//     faRoad,
-//     faChargingStation
-// } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelopeSquare,
+  faPhoneSquare
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faLinkedin,
-  faGithubSquare,
-  faTwitterSquare
+  faGithubSquare
 } from "@fortawesome/free-brands-svg-icons";
 
 // STYLED COMPONENTS
@@ -62,20 +57,23 @@ class Contact extends Component {
   };
 
   handleContactSubmit = e => {
+    const {name, email, message} = this.state;
     e.preventDefault();
-    axios
-      .post("/api/contact")
-      .then(() => {
-        this.setState({
-          sent: true
+    if (name.length > 0 && email.length > 0 && message.length > 0) {
+      axios
+        .post("/api/contact")
+        .then(() => {
+          this.setState({
+            sent: true
+          });
+        })
+        .catch(err => {
+          this.setState({
+            err: true,
+            errMessage: err
+          });
         });
-      })
-      .catch(err => {
-        this.setState({
-          err: true,
-          errMessage: err
-        });
-      });
+    }
   };
 
   render() {
@@ -88,7 +86,7 @@ class Contact extends Component {
             <ContactForm>
               <InputTag>Name</InputTag>
               <Input
-                placeholder="Elon Musk"
+                placeholder="Name"
                 name="name"
                 onChange={this.handleInputChange}
                 type="text"
@@ -96,7 +94,7 @@ class Contact extends Component {
               />
               <InputTag>Email</InputTag>
               <Input
-                placeholder="e.musk@tesla.com"
+                placeholder="Email"
                 name="email"
                 onChange={this.handleInputChange}
                 type="email"
@@ -136,12 +134,17 @@ class Contact extends Component {
             rel="noopener noreferrer"
             href="https://twitter.com/ProPiloty"
           >
-            <FontAwesomeIcon icon={faTwitterSquare} />
+            <FontAwesomeIcon icon={faEnvelopeSquare} />
+          </SocialLink>
+          <SocialLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ProPiloty"
+          >
+            <FontAwesomeIcon icon={faPhoneSquare} />
           </SocialLink>
         </SocialContainer>
-        <Legal>
-          <h6>© Tyler Ellingford | 2019</h6>
-        </Legal>
+        <Legal>© Tyler Ellingford | 2019</Legal>
       </Container>
     );
   }
