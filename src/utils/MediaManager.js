@@ -2,46 +2,33 @@ export const Headshot = '/assets/profilePic.png'
 
 export const HorizonFLMMedia = [
   {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat erat non nisi suscipit dictum. In sodales auctor dui, sed hendrerit dolor tincidunt non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia nisi laoreet libero lacinia, et tempor erat mollis. Fusce vitae leo sodales enim faucibus porta quis ut elit. Mauris quis sollicitudin sapien.'
+    src: '/assets/HorizonFLMScreens/HorizonAuth.png'
   },
   {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat erat non nisi suscipit dictum. In sodales auctor dui, sed hendrerit dolor tincidunt non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia nisi laoreet libero lacinia, et tempor erat mollis. Fusce vitae leo sodales enim faucibus porta quis ut elit. Mauris quis sollicitudin sapien.'
+    src: '/assets/HorizonFLMScreens/HorizonDashboard.png'
   },
   {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Hello world!'
+    src: '/assets/HorizonFLMScreens/HorizonEditFlight.png'
   },
   {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Hello world!'
-  },
-  {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Hello world!'
+    src: '/assets/HorizonFLMScreens/HorizonFlightDetails.png'
   }
 ];
 
 export const JobberMedia = [
   {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Hello world!'
+    src: '/assets/JobberScreens/JobberLanding.png'
   },
   {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Hello world!'
+    src: '/assets/JobberScreens/JobberAuth.png'
   },
   {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Hello world!'
+    src: '/assets/JobberScreens/JobberDashboard.png'
   },
   {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Hello world!'
+    src: '/assets/JobberScreens/JobberBids.png'
   },
   {
-    src: '/assets/tremorPic.jpg',
-    caption: 'Hello world!'
+    src: '/assets/JobberScreens/JobberCreateBid.png'
   }
 ];

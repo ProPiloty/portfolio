@@ -36,8 +36,10 @@ const Projects = () => {
         <Project>
           <ProjectTitle>Horizon Flight Management</ProjectTitle>
           <Description>
-            A personal project to create a synonymous experience for fixed base
-            operators, flight crews, ground crews, and passengers.
+            A project to create a synonymous experience for fixed base
+            operators, flight crews, ground crews, and passengers. This platform
+            allows users to manage preferences, requests for services,
+            schedules, and aircraft parking or hangar space.
           </Description>
           <TechTitle>Technologies used</TechTitle>
           <TechList>
@@ -49,7 +51,7 @@ const Projects = () => {
             <ProjectLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.youtube.com"
+              href="https://www.horizonflight.management"
             >
               <FontAwesomeIcon icon={faLaptopCode} />
               <LinkText>Live Project</LinkText>
@@ -57,7 +59,7 @@ const Projects = () => {
             <ProjectLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.youtube.com"
+              href="https://github.com/ProPiloty/horizon"
             >
               <FontAwesomeIcon icon={faGithubSquare} />
               <LinkText>GitHub Repo</LinkText>
@@ -70,8 +72,8 @@ const Projects = () => {
         <Project>
           <ProjectTitle>Jobber</ProjectTitle>
           <Description>
-            A personal project to create a synonymous experience for fixed base
-            operators, flight crews, ground crews, and passengers.
+            A platform that allows businesses to create and track bids, manage a
+            basic schedule, and their customer's information.
           </Description>
           <TechTitle>Technologies used</TechTitle>
           <TechList>
@@ -83,7 +85,7 @@ const Projects = () => {
             <ProjectLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.youtube.com"
+              href="http://startjobber.us/"
             >
               <FontAwesomeIcon icon={faLaptopCode} />
               <LinkText>Live Project</LinkText>
@@ -91,7 +93,7 @@ const Projects = () => {
             <ProjectLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.youtube.com"
+              href="https://github.com/bid-wars/bid-wars"
             >
               <FontAwesomeIcon icon={faGithubSquare} />
               <LinkText>GitHub Repo</LinkText>
