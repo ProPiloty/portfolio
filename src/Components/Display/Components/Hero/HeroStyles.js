@@ -14,6 +14,8 @@ export const Container = styled.header`
   @media (${device.laptop}) {
     width: 30vw;
     height: 100vh;
+    // padding-bottom: 15px;
+    border-bottom: none;
   }
 `;
 
@@ -22,6 +24,7 @@ export const Separator = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
 `;
 
 // HEADSHOT PHOTO
@@ -53,6 +56,9 @@ export const Summary = styled.h4`
 export const SocialContainer = styled.div`
   margin: 30px 30px 30px;
   font-size: 2rem;
+  @media(${device.laptop}){
+    margin-bottom: 0px;
+  }
 `;
 
 // INDIVIDUAL SOCIAL LINK

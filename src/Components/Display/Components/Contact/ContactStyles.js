@@ -16,6 +16,9 @@ export const SectionHeader = styled.h2`
   font-size: 2rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
+  @media (${device.tablet}) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const ContactForm = styled.form`

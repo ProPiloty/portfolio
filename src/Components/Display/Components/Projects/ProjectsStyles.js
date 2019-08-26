@@ -17,7 +17,7 @@ export const SectionHeader = styled.h1`
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   @media (${device.tablet}) {
-    // font-size: 2rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -98,9 +98,12 @@ export const Description = styled.h3`
 // TECHNOLOGIES USED HEADER
 export const TechTitle = styled.h3`
   margin: 10px 0px 0px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
+  @media(${device.tablet}){
+    font-size: 1.5rem;
+  }
 `;
 
 // LIST OF TECH USED IN THE PROJECT
@@ -110,14 +113,20 @@ export const TechList = styled.ul`
   justify-content: space-between;
   font-size: 1rem;
   font-family: "Cabin", sans-serif;
+  @media(${device.tablet}){
+    font-size: 1.25rem;
+  }
 `;
 
 // INDIVIDUAL TECH USED IN THE PROJECT
 export const TechItem = styled.li`
-  padding: 0px 5px;
+  padding: 0px 10px;
   border-right: 1px solid #000000;
   &:last-child {
     border-right: none;
+  }
+  @media(${device.tablet}){
+    padding: 0px 20px;
   }
 `;
 
