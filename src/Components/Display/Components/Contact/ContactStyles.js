@@ -6,9 +6,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media (max-width: ${device.laptop}) {
-  }
 `;
 
 export const SectionHeader = styled.h2`
@@ -16,6 +13,7 @@ export const SectionHeader = styled.h2`
   font-size: 2rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
+
   @media (${device.tablet}) {
     font-size: 2.5rem;
   }
@@ -34,7 +32,7 @@ export const InputTag = styled.h3`
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
 
-  @media(${device.laptop}) {
+  @media (${device.laptop}) {
     font-size: 1.25rem;
   }
 `;
@@ -53,7 +51,7 @@ export const Input = styled.input`
     font-weight: 700;
   }
 
-  @media(${device.laptop}) {
+  @media (${device.laptop}) {
     font-size: 1rem;
   }
 `;
@@ -74,7 +72,7 @@ export const Message = styled.textarea`
     font-weight: 700;
   }
 
-  @media(${device.laptop}) {
+  @media (${device.laptop}) {
     font-size: 1rem;
   }
 `;
@@ -90,9 +88,10 @@ export const Submit = styled.button`
   color: #0a0908;
   border-radius: 5px;
   border: 1px solid #424b54;
-  font-size: .75rem;
+  font-size: 0.75rem;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     font-weight: 700;
     color: #fcfffc;
     background: #424b54;
@@ -100,7 +99,7 @@ export const Submit = styled.button`
     outline: none;
   }
 
-  @media(${device.laptop}) {
+  @media (${device.laptop}) {
     font-size: 1rem;
     margin: 30px 0px 0px;
   }
@@ -112,7 +111,7 @@ export const SocialContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media(${device.laptop}) {
+  @media (${device.laptop}) {
     margin: 30px 0px 30px;
     font-size: 2.75rem;
   }
@@ -122,11 +121,23 @@ export const SocialLink = styled.a`
   margin: 0px 15px;
   color: #0a0908;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #fcfffc;
     outline: none;
   }
-`
+`;
+
+export const SentMessage = styled.h3`
+  margin: 30px 30px 0px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  text-align: center;
+
+  @media (${device.laptop}) {
+    font-size: 1.25rem;
+  }
+`;
 
 export const Legal = styled.h6`
   margin: 15px 30px 15px;

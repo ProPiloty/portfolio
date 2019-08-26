@@ -6,18 +6,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Gallery = props => {
   const media = props.media.map((frame, key) => {
-    const { src, caption } = frame;
-    if (caption) {
-      return (
-        <div key={key}>
-          <img src={src} />
-          <p className="legend">{caption}</p>
-        </div>
-      )
-    }
+    const { src } = frame;
     return (
       <div key={key}>
-        <img src={src} />
+        <img src={src} alt="screenshot of development project" />
       </div>
     );
   });

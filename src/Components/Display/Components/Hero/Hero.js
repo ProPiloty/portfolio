@@ -9,7 +9,6 @@ import {
   Separator,
   HeadShot,
   Intro,
-  Break,
   Summary,
   SocialContainer,
   SocialLink,
@@ -19,8 +18,7 @@ import {
 // FONT AWESOME ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faEnvelopeSquare,
-  faPhoneSquare
+  faEnvelopeSquare
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faLinkedin,
@@ -63,18 +61,9 @@ const Hero = () => {
             <FontAwesomeIcon icon={faLinkedin} />
           </SocialLink>
           <SocialLink
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/tylerellingford/"
+            href="mailto:ellingfordtyler@gmail.com"
           >
             <FontAwesomeIcon icon={faEnvelopeSquare} />
-          </SocialLink>
-          <SocialLink
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/tylerellingford/"
-          >
-            <FontAwesomeIcon icon={faPhoneSquare} />
           </SocialLink>
         </SocialContainer>
       </Separator>

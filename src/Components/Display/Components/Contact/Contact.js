@@ -3,14 +3,8 @@ import axios from "axios";
 
 // FONT-AWESOME ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelopeSquare,
-  faPhoneSquare
-} from '@fortawesome/free-solid-svg-icons';
-import {
-  faLinkedin,
-  faGithubSquare
-} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 // STYLED COMPONENTS
 import {
@@ -23,6 +17,7 @@ import {
   Submit,
   SocialContainer,
   SocialLink,
+  SentMessage,
   Legal
 } from "./ContactStyles";
 
@@ -30,13 +25,11 @@ class Contact extends Component {
   constructor() {
     super();
     this.state = {
-      submit: false,
       name: "",
       email: "",
       message: "",
       sent: false,
-      err: false,
-      errMessage: ""
+      err: false
     };
   }
 
@@ -44,44 +37,45 @@ class Contact extends Component {
     this.setState({
       [e.target.name]: e.target.value
     });
-    // const {name, email, message} = this.state;
-    // if (name.length > 0 && email.length > 0 && message.length > 0) {
-    //   this.setState({
-    //     submit: true
-    //   })
-    // } else {
-    //   this.setState({
-    //     submit: false,
-    //   })
-    // }
   };
 
   handleContactSubmit = e => {
-    const {name, email, message} = this.state;
+    const { name, email, message } = this.state;
+    const body = { name, email, message };
     e.preventDefault();
-    if (name.length > 0 && email.length > 0 && message.length > 0) {
-      axios
-        .post("/api/contact")
-        .then(() => {
-          this.setState({
-            sent: true
-          });
-        })
-        .catch(err => {
-          this.setState({
-            err: true,
-            errMessage: err
-          });
+    axios
+      .post("/api/contact", body)
+      .then(() => {
+        this.setState({
+          sent: true
         });
-    }
+      })
+      .catch(err => {
+        this.setState({
+          err: true
+        });
+        console.log(err);
+      });
   };
 
   render() {
-    const { sent, submit } = this.state;
+    const { sent, err } = this.state;
     return (
       <Container>
         <SectionHeader>Contact Me</SectionHeader>
-        {!sent ? (
+        {sent ? (
+          <>
+            <SentMessage>Your Message has been sent</SentMessage>
+          </>
+        ) : err ? (
+          <>
+            <SentMessage>
+              There was an error sending your message,
+              <br />
+              please refresh and try again.
+            </SentMessage>
+          </>
+        ) : (
           <>
             <ContactForm>
               <InputTag>Name</InputTag>
@@ -111,8 +105,6 @@ class Contact extends Component {
               <Submit onClick={this.handleContactSubmit}>Submit</Submit>
             </ContactForm>
           </>
-        ) : (
-          <h1>Your Message has been sent</h1>
         )}
         <SocialContainer>
           <SocialLink
@@ -129,19 +121,8 @@ class Contact extends Component {
           >
             <FontAwesomeIcon icon={faGithubSquare} />
           </SocialLink>
-          <SocialLink
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/ProPiloty"
-          >
+          <SocialLink href="mailto:ellingfordtyler@gmail.com">
             <FontAwesomeIcon icon={faEnvelopeSquare} />
-          </SocialLink>
-          <SocialLink
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/ProPiloty"
-          >
-            <FontAwesomeIcon icon={faPhoneSquare} />
           </SocialLink>
         </SocialContainer>
         <Legal>© Tyler Ellingford | 2019</Legal>
