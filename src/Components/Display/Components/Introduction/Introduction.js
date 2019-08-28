@@ -35,7 +35,7 @@ const Introduction = () => {
         </Skill>
         <Skill>
           <FontAwesomeIcon icon={faDatabase} />
-          <SkillTitle>PostgreSQL</SkillTitle>
+          <SkillTitle>SQL</SkillTitle>
         </Skill>
         <Skill>
           <FontAwesomeIcon icon={faHtml5} />
@@ -47,7 +47,7 @@ const Introduction = () => {
         </Skill>
         <Skill>
           <FontAwesomeIcon icon={faJsSquare} />
-          <SkillTitle>Javascript</SkillTitle>
+          <SkillTitle>JavaScript</SkillTitle>
         </Skill>
       </SkillsList>
     </Container>

@@ -51,7 +51,7 @@ const Projects = () => {
             <ProjectLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.horizonflight.management"
+              href="https://horizonflight.management/#/"
             >
               <FontAwesomeIcon icon={faLaptopCode} />
               <LinkText>Live Project</LinkText>
